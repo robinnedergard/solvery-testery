@@ -1,0 +1,38 @@
+{
+  "name": "solvery-testery",
+  "version": "0.0.1",
+  "description": "Testing solvers or anything I feel like doing",
+  "homepage": "https://github.com/robinnedergard/solvery-testery#readme",
+  "bugs": {
+    "url": "https://github.com/robinnedergard/solvery-testery/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/robinnedergard/solvery-testery.git"
+  },
+  "license": "ISC",
+  "author": "Robin Nedergård",
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "npm run build && node ./dist/index.js",
+    "build": "rm -rf dist && tsc -p .",
+    "test": "vitest",
+    "lint": "eslint . --ext .ts,.js",
+    "fix": "eslint --fix . --ext .ts,.js",
+    "format": "prettier --write ."
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3.3.1",
+    "@eslint/js": "^9.36.0",
+    "@types/node": "^24.5.2",
+    "@typescript-eslint/eslint-plugin": "^8.44.1",
+    "@typescript-eslint/parser": "^8.44.1",
+    "eslint": "^9.36.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-prettier": "^5.5.4",
+    "prettier": "^3.6.2",
+    "typescript": "^5.9.2",
+    "vitest": "^3.2.4"
+  }
+}
